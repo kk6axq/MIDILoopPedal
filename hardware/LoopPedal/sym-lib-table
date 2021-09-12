@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Teensy)(type Legacy)(uri D:/GitHub/MidiLoopPedal/hardware/libraries/teensy_library-master/teensy.lib)(options "")(descr ""))
+  (lib (name LoopPedalParts)(type Legacy)(uri D:/GitHub/MidiLoopPedal/hardware/custom_parts/LoopPedalParts.lib)(options "")(descr ""))
+)
