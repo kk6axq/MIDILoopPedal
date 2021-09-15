@@ -178,15 +178,15 @@ F 3 "~" H 9400 1700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 9050 1850 2    50   Input ~ 0
-RX1
-Text GLabel 1750 1600 0    50   Input ~ 0
-RX1
+RX7
+Text GLabel 1750 3400 0    50   Input ~ 0
+RX7
 Wire Wire Line
-	1750 1600 1900 1600
-Text GLabel 1750 1700 0    50   Input ~ 0
-TX1
+	1750 3400 1900 3400
+Text GLabel 1750 3500 0    50   Input ~ 0
+TX7
 Wire Wire Line
-	1750 1700 1900 1700
+	1750 3500 1900 3500
 Wire Wire Line
 	6350 1300 6350 1350
 Wire Wire Line
@@ -268,7 +268,7 @@ F 3 "~" H 9300 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 10550 3500 2    50   Input ~ 0
-TX1
+TX7
 Wire Wire Line
 	9050 3500 9150 3500
 Wire Wire Line
@@ -355,7 +355,6 @@ NoConn ~ 4100 2700
 NoConn ~ 4100 2600
 NoConn ~ 4100 2500
 NoConn ~ 4100 2400
-NoConn ~ 4100 2300
 NoConn ~ 4100 2000
 NoConn ~ 4100 1900
 NoConn ~ 4100 1350
@@ -369,8 +368,6 @@ NoConn ~ 1900 4000
 NoConn ~ 1900 3800
 NoConn ~ 1900 3700
 NoConn ~ 1900 3600
-NoConn ~ 1900 3500
-NoConn ~ 1900 3400
 NoConn ~ 1900 3300
 NoConn ~ 1900 3200
 NoConn ~ 1900 3100
@@ -457,10 +454,10 @@ Text GLabel 7500 5750 0    50   Input ~ 0
 B1
 Text GLabel 4200 2200 2    50   Input ~ 0
 B1
-Text GLabel 4200 2100 2    50   Input ~ 0
+Text GLabel 4200 2300 2    50   Input ~ 0
 B2
 Wire Wire Line
-	4200 2100 4100 2100
+	4200 2300 4100 2300
 Wire Wire Line
 	4200 2200 4100 2200
 $Comp
@@ -602,4 +599,7 @@ Wire Wire Line
 Connection ~ 9000 1700
 Wire Wire Line
 	9000 1700 9250 1700
+NoConn ~ 1900 1600
+NoConn ~ 1900 1700
+NoConn ~ 4100 2100
 $EndSCHEMATC
