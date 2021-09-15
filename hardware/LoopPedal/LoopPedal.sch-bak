@@ -169,25 +169,16 @@ Wire Wire Line
 $Comp
 L Device:R R3
 U 1 1 613BD017
-P 8950 1700
-F 0 "R3" V 8835 1700 50  0000 C CNN
-F 1 "470" V 8744 1700 50  0000 C CNN
-F 2 "" V 8880 1700 50  0001 C CNN
-F 3 "~" H 8950 1700 50  0001 C CNN
-	1    8950 1700
+P 9400 1700
+F 0 "R3" V 9285 1700 50  0000 C CNN
+F 1 "470" V 9194 1700 50  0000 C CNN
+F 2 "" V 9330 1700 50  0001 C CNN
+F 3 "~" H 9400 1700 50  0001 C CNN
+	1    9400 1700
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8750 1700 8800 1700
-Wire Wire Line
-	9100 1700 9300 1700
-Text GLabel 9300 1800 2    50   Input ~ 0
+Text GLabel 9050 1850 2    50   Input ~ 0
 RX1
-Wire Wire Line
-	9300 1800 9300 1700
-Connection ~ 9300 1700
-Wire Wire Line
-	9300 1700 9600 1700
 Text GLabel 1750 1600 0    50   Input ~ 0
 RX1
 Wire Wire Line
@@ -600,4 +591,15 @@ Wire Wire Line
 Wire Wire Line
 	9300 5050 9500 5050
 NoConn ~ 10100 5050
+Wire Wire Line
+	9550 1700 9600 1700
+Wire Wire Line
+	8750 1700 9000 1700
+Wire Wire Line
+	9050 1850 9000 1850
+Wire Wire Line
+	9000 1850 9000 1700
+Connection ~ 9000 1700
+Wire Wire Line
+	9000 1700 9250 1700
 $EndSCHEMATC
