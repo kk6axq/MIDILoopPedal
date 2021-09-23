@@ -10,12 +10,12 @@ This project is organized into four main phases and two stretch phases. Minimum 
 * ~~Select electrical components and build schematic~~
 * ~~Build CAD model concept~~
 
-**Phase II: In Progress**
+**Phase II: Complete**
 * ~~Build breadboard layout of electrical system~~
 * ~~Test functionality of electrical system to receive and send key events~~
-* Build Solidworks Assembly of body
+* ~~Build Solidworks Assembly of body~~
 
-**Phase III:**
+**Phase III: In Progress**
 * Build proto-board or PCB layout for electrical system
 * Assemble electrical and mechanical system
 
