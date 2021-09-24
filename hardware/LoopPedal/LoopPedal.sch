@@ -465,7 +465,7 @@ L Connector:Conn_01x02_Female J3
 U 1 1 613DFFB4
 P 7850 5750
 F 0 "J3" H 7878 5726 50  0000 L CNN
-F 1 "Footpedal" H 7878 5635 50  0000 L CNN
+F 1 "Footpedal Female" H 7878 5635 50  0000 L CNN
 F 2 "" H 7850 5750 50  0001 C CNN
 F 3 "~" H 7850 5750 50  0001 C CNN
 	1    7850 5750
@@ -521,56 +521,6 @@ Wire Wire Line
 Text Notes 500  7750 0    50   ~ 0
 Based on schematic from https://www.pjrc.com/teensy/td_libs_MIDI.html
 $Comp
-L Device:LED D2
-U 1 1 613F1F7F
-P 9500 5850
-F 0 "D2" H 9493 5595 50  0000 C CNN
-F 1 "Power" H 9493 5686 50  0000 C CNN
-F 2 "" H 9500 5850 50  0001 C CNN
-F 3 "~" H 9500 5850 50  0001 C CNN
-	1    9500 5850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 613F25D0
-P 9100 5850
-F 0 "R6" V 8893 5850 50  0000 C CNN
-F 1 "220" V 8984 5850 50  0000 C CNN
-F 2 "" V 9030 5850 50  0001 C CNN
-F 3 "~" H 9100 5850 50  0001 C CNN
-	1    9100 5850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9250 5850 9350 5850
-$Comp
-L power:GND #PWR06
-U 1 1 613F4184
-P 9750 5850
-F 0 "#PWR06" H 9750 5600 50  0001 C CNN
-F 1 "GND" H 9755 5677 50  0000 C CNN
-F 2 "" H 9750 5850 50  0001 C CNN
-F 3 "" H 9750 5850 50  0001 C CNN
-	1    9750 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 5850 9750 5850
-$Comp
-L power:+5V #PWR05
-U 1 1 613F66F8
-P 8850 5850
-F 0 "#PWR05" H 8850 5700 50  0001 C CNN
-F 1 "+5V" H 8865 6023 50  0000 C CNN
-F 2 "" H 8850 5850 50  0001 C CNN
-F 3 "" H 8850 5850 50  0001 C CNN
-	1    8850 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 5850 8950 5850
-$Comp
 L LED:WS2812B D3
 U 1 1 61405613
 P 9800 5050
@@ -602,4 +552,34 @@ Wire Wire Line
 NoConn ~ 1900 1600
 NoConn ~ 1900 1700
 NoConn ~ 4100 2100
+Text Notes 1850 5200 0    50   ~ 0
+U2 optionally seated in 2x 24pin 0.1" female pin headers\nSee U2-Pin-Header on BOM
+$Comp
+L Switch:SW_Push SW3
+U 1 1 614D41FB
+P 5300 6250
+F 0 "SW3" H 5300 6535 50  0000 C CNN
+F 1 "Footpedal Button" H 5300 6444 50  0000 C CNN
+F 2 "" H 5300 6450 50  0001 C CNN
+F 3 "~" H 5300 6450 50  0001 C CNN
+	1    5300 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 614DBEF8
+P 5850 6250
+F 0 "J4" H 5822 6224 50  0000 R CNN
+F 1 "Footpedal Male" H 5822 6133 50  0000 R CNN
+F 2 "" H 5850 6250 50  0001 C CNN
+F 3 "~" H 5850 6250 50  0001 C CNN
+	1    5850 6250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6250 5650 6250
+Wire Wire Line
+	5650 6350 5100 6350
+Wire Wire Line
+	5100 6350 5100 6250
 $EndSCHEMATC

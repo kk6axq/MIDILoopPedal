@@ -178,15 +178,15 @@ F 3 "~" H 9400 1700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 9050 1850 2    50   Input ~ 0
-RX1
-Text GLabel 1750 1600 0    50   Input ~ 0
-RX1
+RX7
+Text GLabel 1750 3400 0    50   Input ~ 0
+RX7
 Wire Wire Line
-	1750 1600 1900 1600
-Text GLabel 1750 1700 0    50   Input ~ 0
-TX1
+	1750 3400 1900 3400
+Text GLabel 1750 3500 0    50   Input ~ 0
+TX7
 Wire Wire Line
-	1750 1700 1900 1700
+	1750 3500 1900 3500
 Wire Wire Line
 	6350 1300 6350 1350
 Wire Wire Line
@@ -268,7 +268,7 @@ F 3 "~" H 9300 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 10550 3500 2    50   Input ~ 0
-TX1
+TX7
 Wire Wire Line
 	9050 3500 9150 3500
 Wire Wire Line
@@ -355,7 +355,6 @@ NoConn ~ 4100 2700
 NoConn ~ 4100 2600
 NoConn ~ 4100 2500
 NoConn ~ 4100 2400
-NoConn ~ 4100 2300
 NoConn ~ 4100 2000
 NoConn ~ 4100 1900
 NoConn ~ 4100 1350
@@ -369,8 +368,6 @@ NoConn ~ 1900 4000
 NoConn ~ 1900 3800
 NoConn ~ 1900 3700
 NoConn ~ 1900 3600
-NoConn ~ 1900 3500
-NoConn ~ 1900 3400
 NoConn ~ 1900 3300
 NoConn ~ 1900 3200
 NoConn ~ 1900 3100
@@ -457,10 +454,10 @@ Text GLabel 7500 5750 0    50   Input ~ 0
 B1
 Text GLabel 4200 2200 2    50   Input ~ 0
 B1
-Text GLabel 4200 2100 2    50   Input ~ 0
+Text GLabel 4200 2300 2    50   Input ~ 0
 B2
 Wire Wire Line
-	4200 2100 4100 2100
+	4200 2300 4100 2300
 Wire Wire Line
 	4200 2200 4100 2200
 $Comp
@@ -468,7 +465,7 @@ L Connector:Conn_01x02_Female J3
 U 1 1 613DFFB4
 P 7850 5750
 F 0 "J3" H 7878 5726 50  0000 L CNN
-F 1 "Footpedal" H 7878 5635 50  0000 L CNN
+F 1 "Footpedal Female" H 7878 5635 50  0000 L CNN
 F 2 "" H 7850 5750 50  0001 C CNN
 F 3 "~" H 7850 5750 50  0001 C CNN
 	1    7850 5750
@@ -524,56 +521,6 @@ Wire Wire Line
 Text Notes 500  7750 0    50   ~ 0
 Based on schematic from https://www.pjrc.com/teensy/td_libs_MIDI.html
 $Comp
-L Device:LED D2
-U 1 1 613F1F7F
-P 9500 5850
-F 0 "D2" H 9493 5595 50  0000 C CNN
-F 1 "Power" H 9493 5686 50  0000 C CNN
-F 2 "" H 9500 5850 50  0001 C CNN
-F 3 "~" H 9500 5850 50  0001 C CNN
-	1    9500 5850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 613F25D0
-P 9100 5850
-F 0 "R6" V 8893 5850 50  0000 C CNN
-F 1 "220" V 8984 5850 50  0000 C CNN
-F 2 "" V 9030 5850 50  0001 C CNN
-F 3 "~" H 9100 5850 50  0001 C CNN
-	1    9100 5850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9250 5850 9350 5850
-$Comp
-L power:GND #PWR06
-U 1 1 613F4184
-P 9750 5850
-F 0 "#PWR06" H 9750 5600 50  0001 C CNN
-F 1 "GND" H 9755 5677 50  0000 C CNN
-F 2 "" H 9750 5850 50  0001 C CNN
-F 3 "" H 9750 5850 50  0001 C CNN
-	1    9750 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 5850 9750 5850
-$Comp
-L power:+5V #PWR05
-U 1 1 613F66F8
-P 8850 5850
-F 0 "#PWR05" H 8850 5700 50  0001 C CNN
-F 1 "+5V" H 8865 6023 50  0000 C CNN
-F 2 "" H 8850 5850 50  0001 C CNN
-F 3 "" H 8850 5850 50  0001 C CNN
-	1    8850 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 5850 8950 5850
-$Comp
 L LED:WS2812B D3
 U 1 1 61405613
 P 9800 5050
@@ -602,4 +549,37 @@ Wire Wire Line
 Connection ~ 9000 1700
 Wire Wire Line
 	9000 1700 9250 1700
+NoConn ~ 1900 1600
+NoConn ~ 1900 1700
+NoConn ~ 4100 2100
+Text Notes 1850 5200 0    50   ~ 0
+U2 optionally seated in 2x 24pin 0.1" female pin headers\nSee U2-Pin-Header on BOM
+$Comp
+L Switch:SW_Push SW3
+U 1 1 614D41FB
+P 5300 6250
+F 0 "SW3" H 5300 6535 50  0000 C CNN
+F 1 "Footpedal Button" H 5300 6444 50  0000 C CNN
+F 2 "" H 5300 6450 50  0001 C CNN
+F 3 "~" H 5300 6450 50  0001 C CNN
+	1    5300 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 614DBEF8
+P 5850 6250
+F 0 "J4" H 5822 6224 50  0000 R CNN
+F 1 "Footpedal Male" H 5822 6133 50  0000 R CNN
+F 2 "" H 5850 6250 50  0001 C CNN
+F 3 "~" H 5850 6250 50  0001 C CNN
+	1    5850 6250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6250 5650 6250
+Wire Wire Line
+	5650 6350 5100 6350
+Wire Wire Line
+	5100 6350 5100 6250
 $EndSCHEMATC

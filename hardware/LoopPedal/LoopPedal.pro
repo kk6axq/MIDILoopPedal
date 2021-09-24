@@ -1,4 +1,4 @@
-update=9/11/2021 8:23:45 PM
+update=9/23/2021 5:04:44 PM
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=D:/GitHub/MidiLoopPedal/deliverables/Phase I/
+PlotDirectoryName=../../deliverables/Phase III/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
