@@ -20,7 +20,7 @@ This project is organized into four main phases and two stretch phases. Minimum 
 * ~~Build proto-board or PCB layout for electrical system~~
 * ~~Assemble electrical and mechanical system~~
 
-**Phase IV:**
+**Phase IV: In Progress**
 * Develop software to record and play back key events
 * Test complete system
 
