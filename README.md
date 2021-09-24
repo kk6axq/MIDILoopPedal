@@ -2,6 +2,7 @@
 MIDILoopPedal is a Musical Instrument Digital Interface (MIDI) based loop pedal for use with an electric piano. It enables the user to record, dub, and playback multiple tracks in realtime.
 
 This project is being conducted as an Honors Enrichment Contract for EGR201, Use-Inspired Design Project I, at Arizona State University on the Polytechnic Campus through Barrett, the Honors College, at Arizona State University, and under the guidance of Dr. Adam Carberry.
+**TODO: Add photo**
 
 ## Project Status
 This project is organized into four main phases and two stretch phases. Minimum success will be demonstrated by completion of phase IV.<br>
@@ -15,9 +16,9 @@ This project is organized into four main phases and two stretch phases. Minimum 
 * ~~Test functionality of electrical system to receive and send key events~~
 * ~~Build Solidworks Assembly of body~~
 
-**Phase III: In Progress**
-* Build proto-board or PCB layout for electrical system
-* Assemble electrical and mechanical system
+**Phase III: Complete**
+* ~~Build proto-board or PCB layout for electrical system~~
+* ~~Assemble electrical and mechanical system~~
 
 **Phase IV:**
 * Develop software to record and play back key events
