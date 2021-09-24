@@ -33,6 +33,7 @@ This project is organized into four main phases and two stretch phases. Minimum 
 ## Project Structure
 This repository will contain all files from the project as it progresses. The current structure is:
 * **hardware**: Hardware design files for the CAD and EDA parts of the project. CAD parts are designed in Solidworks, and the electrical schematics are designed in KiCAD.
+* **software**: Source code for the testing, validation, and operation aspects of the project. The Teensy 4.1 microcontroller is programmed through the Arduino environment, and all source code is in C/C++.
 * **deliverables**: Deliverables for the different phases of the project. These are copies of the different files at the time of phase completion, but they serve as a moment-in-time survey of the project and help illustrate the design evolution over time.
 
 ## Contact
